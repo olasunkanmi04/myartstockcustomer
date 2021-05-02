@@ -1,0 +1,48 @@
+{
+  "name": "myartstockcustomer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "chart.js": "^2.7.1",
+    "cssnano": "^5.0.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-cache": "^1.1.1",
+    "gulp-cond": "^1.0.0",
+    "gulp-envify": "^1.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-raster": "^0.2.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svgo": "^2.1.0",
+    "gulp-svgstore": "^7.0.1",
+    "jquery": "^3.3.1",
+    "postcss-discard-comments": "^5.0.0",
+    "tether": "^1.4.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/plugin-transform-modules-amd": "^7.2.0",
+    "@babel/preset-env": "^7.13.15",
+    "boostrap": "^2.0.0",
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-install": "^1.1.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-vue-single-file-component": "^1.0.8",
+    "node-sass": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,43 @@
+.alt__btn {
+    border: 1px solid #060505;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(34, 34, 34, 0.8);
+    height: 60px;
+    background-color: transparent;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.cta__btn {
+    background: #060505;
+    border-radius: 10px;
+    height: 60px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .alt__btn,
+    .cta__btn {
+        font-size: 16px;
+        padding-left: 30px;
+        padding-right: 30px;
+        height: 45px;
+    }
+}

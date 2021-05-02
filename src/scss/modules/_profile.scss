@@ -1,0 +1,349 @@
+.profile {
+ 
+    ul li:nth-child(1) {
+    background: #efecff;
+  }
+
+   ul li:nth-child(1):hover {
+    background-color: #efecff;
+  }
+  
+
+  &__form-content {
+    padding: 40px 50px;
+  }
+
+  &__form-group {
+    position: relative;
+
+    .span-text {
+      position: absolute;
+      left: 90%;
+      top: 50%;
+      transform: translateY(50%);
+      color: #3048b5;
+    }
+  }
+
+  &__label {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+
+  &__input {
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+
+  &__input::placeholder {
+    font-size: 16px;
+  }
+
+  &__preference {
+    margin-top: 50px;
+    padding: 20px;
+
+    .pref-title {
+      font-size: 18px;
+      font-weight: 500;
+      padding-bottom: 15px;
+    }
+
+    .custom-control-right {
+      padding-right: 24px;
+      padding-left: 0;
+      margin-left: 0;
+      z-index: 0;
+      margin-right: 0;
+    }
+
+    .custom-control-right .custom-control-label::after {
+      right: -88.5rem;
+      background-color: #c4c4c4;
+      left: auto;
+      top: 2.2rem;
+      width: 9px;
+      height: 9px;
+    }
+
+    .custom-control-right .custom-control-label::before {
+      right: -89.5rem;
+      left: auto;
+      top: 2rem;
+      width: 20.85px;
+      height: 13px;
+      background-color: #fff;
+    }
+
+    .custom-control-input:focus~.custom-control-label::before {
+      border-color: #c4c4c4 !important;
+      box-shadow: 1rem 1rem 0 0rem rgba(0, 0, 0, 0) !important;
+    }
+
+    .custom-control-input:checked~.custom-control-label::before {
+      border-color: #3048b5 !important;
+      background-color: #3048b5 !important;
+    }
+
+    .custom-control-input:focus:not(:checked)~.custom-control-label::before {
+      border-color: #c4c4c4 !important;
+    }
+
+    &__preference .pref-option {
+      position: relative;
+    }
+
+    .pref-type,
+    .pref-option {
+      line-height: 24px;
+      padding: 10px 0;
+    }
+
+    .pref-option .fas {
+      color: #3048b5;
+      position: absolute;
+      left: 85%;
+    }
+  }
+
+  &__favorite {
+    margin-top: 50px;
+    padding: 20px;
+  }
+
+  &__favorite p {
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+  }
+
+  &__favorite .fa-chevron-right {
+    color: #3048b5;
+    position: absolute;
+    left: 90%;
+  }
+
+  &__deactivate {
+    margin-top: 50px;
+    padding: 20px;
+
+    .deactivate {
+      font-size: 18px;
+      font-weight: 500;
+      padding-bottom: 25px;
+    }
+
+    .action-text {
+      font-size: 16px;
+      font-weight: 400;
+      padding-bottom: 25px;
+    }
+
+    .action-link {
+      color: #3048b5;
+    }
+  }
+
+  &__modal-wrapper {
+    padding-top: 50px;
+
+    .blue-btn {
+      background-color: #3048b5 !important;
+    }
+
+    .modal-content {
+      padding-bottom: 9px;
+    }
+
+    .modal-body {
+      padding: 15px 10px;
+    }
+  }
+}
+
+@media screen and(max-width:1038px) {
+ 
+    .custom-control-right .custom-control-label::after {
+      right: -47.5rem;
+    }
+
+    .custom-control-right .custom-control-label::before {
+      right: -48.5rem;
+    }
+  
+  }
+  .profile__form-group {
+    position: relative;
+
+    .span-text {
+      font-size: 14px;
+    }
+  }
+
+  .profile__form-content {
+    padding: 40px 20px;
+  
+}
+
+@media screen and (max-width: 768px) {
+
+  .profile__form-content {
+    padding: 40px 20px;
+  }
+
+  .span-text {
+    left: 80%;
+    font-size: 14px;
+  }
+
+  .custom-control-right .custom-control-label::after {
+    right: -40.5rem !important;
+  }
+
+  .custom-control-right .custom-control-label::before {
+    right: -41.5rem !important;
+  }
+
+  .profile__modal-wrapper {
+    padding-top: 200px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+
+  .profile__form-content {
+    padding: 40px 10px;
+  }
+
+
+  .profile__form-group {
+    .span-text {
+      left: 84%;
+      font-size: 14px;
+    }
+  }
+
+  .custom-control-right .custom-control-label::after {
+    right: -35.5rem !important;
+  }
+
+  .custom-control-right .custom-control-label::before {
+    right: -36.5rem !important;
+  }
+
+  .profile__modal-wrapper {
+    padding-top: 200px;
+
+    .modal-content {
+      padding-bottom: 9px;
+      width: 70%;
+      margin-left: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .custom-control-right .custom-control-label::after {
+    right: -24.5rem !important;
+  }
+
+  .custom-control-right .custom-control-label::before {
+    right: -25.5rem !important;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .profile__form-group {
+    .span-text {
+      font-size: 12px;
+    }
+  }
+
+  .custom-control-right .custom-control-label::after {
+    right: -19.5rem !important;
+  }
+
+  .custom-control-right .custom-control-label::before {
+    right: -20.5rem !important;
+  }
+}
+
+@media screen and (max-width:300px) {
+
+ .profile__label {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+
+  .profile__form-content {
+    padding: 10px;
+
+    .user-detail{
+      font-size: 18px;
+    }
+  }
+
+   .profile__form-group {
+    .span-text{
+            left: 80%;
+    }
+  }
+
+   .profile__preference {
+    padding:10px;
+    p{
+      font-size: 14px;
+    }
+
+  }
+ .custom-control-right .custom-control-label::after {
+    right: -14.5rem !important;
+  }
+
+  .custom-control-right .custom-control-label::before {
+    right: -15.5rem !important;
+  }
+  
+   .profile__favorite{
+     padding:10px;
+    p {
+    font-size: 14px;
+  }
+
+ .fa-chevron-right {
+    left: 90%;
+    font-size: 14px;
+  }
+}
+
+   .profile__deactivate {
+    padding: 10px;
+
+    .deactivate {
+      font-size: 14px;
+    }
+
+    .action-text {
+      font-size: 14px;
+    }
+
+    .action-link {
+      color: #3048b5;
+      font-size: 14px;
+    }
+}
+
+ .profile__modal-wrapper {
+    padding-top: 200px;
+
+    .modal-content {
+      width: 100%;
+      margin-left: 0px;
+    }
+
+    .modal-body {
+      padding: 15px 10px;
+    }
+  }
+}

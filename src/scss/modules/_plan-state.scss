@@ -1,0 +1,67 @@
+.plans {
+ 
+ ul li:nth-child(3) {
+    background: #efecff;
+  }
+
+ ul li:nth-child(3):hover {
+    background-color: #efecff;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__image img {
+    margin-bottom: 30px;
+  }
+
+  &__image p {
+    color: #091540;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  &__image a {
+    color: #3048b5;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  &__card {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__download {
+    line-height: 40px;
+  }
+
+  &__download span {
+    color: #091540;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  &__view a {
+    color: #3048b5;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .plans__card {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
