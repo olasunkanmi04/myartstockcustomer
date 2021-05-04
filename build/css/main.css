@@ -1130,10 +1130,14 @@ body {
   position: relative; }
   .profile__form-group .span-text {
     position: absolute;
-    left: 90%;
-    top: 50%;
-    transform: translateY(50%);
-    color: #3048b5; }
+    right: 22px;
+    top: 0;
+    height: fit-content;
+    color: #3048b5;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 14px; }
 
 .profile__label {
   font-size: 16px;
@@ -1154,23 +1158,24 @@ body {
     font-size: 18px;
     font-weight: 500;
     padding-bottom: 15px; }
+  .profile__preference .custom-control-label {
+    width: 100%; }
   .profile__preference .custom-control-right {
-    padding-right: 24px;
     padding-left: 0;
     margin-left: 0;
     z-index: 0;
     margin-right: 0; }
   .profile__preference .custom-control-right .custom-control-label::after {
-    right: -88.5rem;
+    right: calc(113px + 10px);
     background-color: #c4c4c4;
-    left: auto;
-    top: 2.2rem;
+    left: unset;
+    top: 1.7rem;
     width: 9px;
     height: 9px; }
   .profile__preference .custom-control-right .custom-control-label::before {
-    right: -89.5rem;
-    left: auto;
-    top: 2rem;
+    right: 113px;
+    top: 1.5rem;
+    left: unset;
     width: 20.85px;
     height: 13px;
     background-color: #fff; }
@@ -1205,7 +1210,7 @@ body {
 .profile__favorite .fa-chevron-right {
   color: #3048b5;
   position: absolute;
-  left: 90%; }
+  right: 113px; }
 
 .profile__deactivate {
   margin-top: 50px;
@@ -1230,17 +1235,6 @@ body {
   .profile__modal-wrapper .modal-body {
     padding: 15px 10px; }
 
-@media screen and (max-width: 1038px) {
-  .custom-control-right .custom-control-label::after {
-    right: -47.5rem; }
-  .custom-control-right .custom-control-label::before {
-    right: -48.5rem; } }
-
-.profile__form-group {
-  position: relative; }
-  .profile__form-group .span-text {
-    font-size: 14px; }
-
 .profile__form-content {
   padding: 40px 20px; }
 
@@ -1250,10 +1244,6 @@ body {
   .span-text {
     left: 80%;
     font-size: 14px; }
-  .custom-control-right .custom-control-label::after {
-    right: -40.5rem !important; }
-  .custom-control-right .custom-control-label::before {
-    right: -41.5rem !important; }
   .profile__modal-wrapper {
     padding-top: 200px; } }
 
@@ -1263,10 +1253,6 @@ body {
   .profile__form-group .span-text {
     left: 84%;
     font-size: 14px; }
-  .custom-control-right .custom-control-label::after {
-    right: -35.5rem !important; }
-  .custom-control-right .custom-control-label::before {
-    right: -36.5rem !important; }
   .profile__modal-wrapper {
     padding-top: 200px; }
     .profile__modal-wrapper .modal-content {
@@ -1274,19 +1260,9 @@ body {
       width: 70%;
       margin-left: 20px; } }
 
-@media screen and (max-width: 415px) {
-  .custom-control-right .custom-control-label::after {
-    right: -24.5rem !important; }
-  .custom-control-right .custom-control-label::before {
-    right: -25.5rem !important; } }
-
 @media screen and (max-width: 376px) {
   .profile__form-group .span-text {
-    font-size: 12px; }
-  .custom-control-right .custom-control-label::after {
-    right: -19.5rem !important; }
-  .custom-control-right .custom-control-label::before {
-    right: -20.5rem !important; } }
+    font-size: 12px; } }
 
 @media screen and (max-width: 300px) {
   .profile__label {
@@ -1302,10 +1278,6 @@ body {
     padding: 10px; }
     .profile__preference p {
       font-size: 14px; }
-  .custom-control-right .custom-control-label::after {
-    right: -14.5rem !important; }
-  .custom-control-right .custom-control-label::before {
-    right: -15.5rem !important; }
   .profile__favorite {
     padding: 10px; }
     .profile__favorite p {
