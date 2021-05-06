@@ -1123,6 +1123,36 @@ body {
 .profile ul li:nth-child(1):hover {
   background-color: #efecff; }
 
+.profile__heading-flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.profile__profile-pic {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; }
+  .profile__profile-pic p {
+    color: #3048b5;
+    margin-left: 30px;
+    cursor: pointer; }
+  .profile__profile-pic img {
+    width: 50px; }
+  .profile__profile-pic .form-file {
+    position: absolute;
+    left: 30%;
+    opacity: 0;
+    top: 0;
+    height: fit-content;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer; }
+    .profile__profile-pic .form-file input {
+      cursor: pointer; }
+
 .profile__form-content {
   padding: 40px 50px; }
 
@@ -1245,7 +1275,23 @@ body {
     left: 80%;
     font-size: 14px; }
   .profile__modal-wrapper {
-    padding-top: 200px; } }
+    padding-top: 200px; }
+  .profile__preference .custom-control-right .custom-control-label::after {
+    right: calc(50px + 10px);
+    background-color: #c4c4c4;
+    left: unset;
+    top: 1.7rem;
+    width: 9px;
+    height: 9px; }
+  .profile__preference .custom-control-right .custom-control-label::before {
+    right: 50px;
+    top: 1.5rem;
+    left: unset;
+    width: 20.85px;
+    height: 13px;
+    background-color: #fff; }
+  .profile__favorite .fa-chevron-right {
+    right: 50px; } }
 
 @media screen and (max-width: 550px) {
   .profile__form-content {
@@ -1259,6 +1305,14 @@ body {
       padding-bottom: 9px;
       width: 70%;
       margin-left: 20px; } }
+
+@media screen and (max-width: 412px) {
+  .profile__profile-pic p {
+    color: #3048b5;
+    margin-left: 10px;
+    font-size: 14px; }
+  .profile__profile-pic img {
+    width: 30px; } }
 
 @media screen and (max-width: 376px) {
   .profile__form-group .span-text {
@@ -1572,10 +1626,10 @@ body {
   .purchase__table-wrap th {
     padding: 20px 10px !important; } }
 
-.recent ul li:nth-child(5) {
+.recent ul li:nth-child(6) {
   background: #efecff; }
 
-.recent ul li:nth-child(5):hover {
+.recent ul li:nth-child(6):hover {
   background-color: #efecff; }
 
 .recent__section {
@@ -1745,11 +1799,12 @@ body {
       width: 80px;
       height: 60px;
       padding: 10px;
-      margin-right: 10px;
+      margin-right: 15px;
       display: flex;
       justify-content: center;
       align-items: center; }
-    .account__lists .list-item-link .list-icon .far {
+    .account__lists .list-item-link .list-icon .far,
+    .account__lists .list-item-link .list-icon .fas {
       font-size: 30px; }
     .account__lists .list-item-link .list-title {
       position: relative;
@@ -1825,7 +1880,8 @@ body {
       text-align: center;
       padding-left: 0px;
       margin-right: 20px; }
-    .account__lists .list-item-link .list-icon .far {
+    .account__lists .list-item-link .list-icon .far,
+    .account__lists .list-item-link .list-icon .fas {
       font-size: 30px; }
     .account__lists .list-item-link .list-title {
       position: relative;
@@ -1851,7 +1907,8 @@ body {
   .account__lists .list-item a .list-icon {
     margin-right: 7px;
     margin-top: 0px; }
-  .account__lists .list-item a .list-icon .far {
+  .account__lists .list-item a .list-icon .far,
+  .account__lists .list-item a .list-icon .fas {
     font-size: 22px; }
   .account__lists .list-item a .list-title {
     font-size: 22px; } }
@@ -1866,7 +1923,108 @@ body {
     padding: 10px;
     margin-right: 10px;
     justify-content: start; }
-  .account__lists .list-item a .list-icon .far {
+  .account__lists .list-item a .list-icon .far,
+  .account__lists .list-item a .list-icon .fas {
     font-size: 16px; }
   .account__lists .list-item a .list-title {
     font-size: 16px; } }
+
+.download ul li:nth-child(5) {
+  background: #efecff; }
+
+.download ul li:nth-child(5):hover {
+  background-color: #efecff; }
+
+.download__section {
+  margin-bottom: 40px; }
+
+.download__flex-grid {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px; }
+  .download__flex-grid img {
+    object-fit: cover;
+    max-width: 100%;
+    height: 120px;
+    margin-bottom: 10px; }
+  .download__flex-grid p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px; }
+  .download__flex-grid small {
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 10px;
+    color: #828282; }
+
+@media screen and (max-width: 768px) {
+  __flex-grid {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px; }
+    __flex-grid img {
+      object-fit: cover;
+      max-width: 100%;
+      height: 120px;
+      margin-bottom: 10px; }
+    __flex-grid p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 26px; }
+    __flex-grid small {
+      font-size: 9px;
+      font-weight: 500;
+      line-height: 10px;
+      color: #828282; } }
+
+@media screen and (max-width: 540px) {
+  .download__flex-grid {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px; }
+    .download__flex-grid .download-links {
+      margin-bottom: 20px; }
+    .download__flex-grid img {
+      height: 110px;
+      margin-bottom: 10px; }
+    .download__flex-grid p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 26px; }
+    .download__flex-grid small {
+      font-size: 9px;
+      font-weight: 500;
+      line-height: 10px;
+      color: #828282; } }
+
+@media screen and (max-width: 300px) {
+  __flex-grid {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px; }
+    __flex-grid img {
+      object-fit: cover;
+      max-width: 100%;
+      height: 120px;
+      margin-bottom: 10px; }
+    __flex-grid p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 26px; }
+    __flex-grid small {
+      font-size: 9px;
+      font-weight: 500;
+      line-height: 10px;
+      color: #828282; } }

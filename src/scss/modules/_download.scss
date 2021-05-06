@@ -1,0 +1,141 @@
+.download {
+  ul li:nth-child(5) {
+    background: #efecff;
+  }
+
+  ul li:nth-child(5):hover {
+    background-color: #efecff;
+  }
+
+  &__section {
+    margin-bottom: 40px;
+  }
+
+  &__flex-grid {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    img {
+      object-fit: cover;
+      max-width: 100%;
+      height: 120px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 26px;
+    }
+
+    small {
+      font-size: 9px;
+      font-weight: 500;
+      line-height: 10px;
+      color: #828282;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+ 
+  &__flex-grid {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    img {
+      object-fit: cover;
+      max-width: 100%;
+      height: 120px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 26px;
+    }
+
+    small {
+      font-size: 9px;
+      font-weight: 500;
+      line-height: 10px;
+      color: #828282;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  
+  .download__flex-grid {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    .download-links{
+        margin-bottom: 20px;
+    }
+
+    img {
+     
+      height: 110px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 26px;
+    }
+
+    small {
+      font-size: 9px;
+      font-weight: 500;
+      line-height: 10px;
+      color: #828282;
+    }
+  }
+}
+
+@media screen and (max-width: 300px) {
+  
+  &__flex-grid {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    img {
+      object-fit: cover;
+      max-width: 100%;
+      height: 120px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 26px;
+    }
+
+    small {
+      font-size: 9px;
+      font-weight: 500;
+      line-height: 10px;
+      color: #828282;
+    }
+  }
+}

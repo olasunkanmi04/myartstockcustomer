@@ -1,5 +1,4 @@
 .profile {
-
   ul li:nth-child(1) {
     background: #efecff;
   }
@@ -8,6 +7,45 @@
     background-color: #efecff;
   }
 
+  &__heading-flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__profile-pic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    p {
+      color: #3048b5;
+      margin-left: 30px;
+      cursor: pointer;
+    }
+
+    img {
+      width: 50px;
+    }
+
+    .form-file {
+      position: absolute;
+      left: 30%;
+      opacity: 0;
+      top: 0;
+      height: fit-content;
+      bottom: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+      cursor: pointer;
+
+      input {
+        cursor: pointer;
+      }
+    }
+  }
 
   &__form-content {
     padding: 40px 50px;
@@ -171,11 +209,9 @@
 
 .profile__form-content {
   padding: 40px 20px;
-
 }
 
 @media screen and (max-width: 768px) {
-
   .profile__form-content {
     padding: 40px 20px;
   }
@@ -188,14 +224,36 @@
   .profile__modal-wrapper {
     padding-top: 200px;
   }
+
+  .profile__preference {
+    .custom-control-right .custom-control-label::after {
+      right: calc(50px + 10px);
+      background-color: #c4c4c4;
+      left: unset;
+      top: 1.7rem;
+      width: 9px;
+      height: 9px;
+    }
+
+    .custom-control-right .custom-control-label::before {
+      right: 50px;
+      top: 1.5rem;
+      left: unset;
+      width: 20.85px;
+      height: 13px;
+      background-color: #fff;
+    }
+  }
+
+  .profile__favorite .fa-chevron-right {
+    right: 50px;
+  }
 }
 
 @media screen and (max-width: 550px) {
-
   .profile__form-content {
     padding: 40px 10px;
   }
-
 
   .profile__form-group {
     .span-text {
@@ -215,6 +273,20 @@
   }
 }
 
+@media screen and (max-width: 412px) {
+  .profile__profile-pic {
+    p {
+      color: #3048b5;
+      margin-left: 10px;
+      font-size: 14px;
+    }
+
+    img {
+      width: 30px;
+    }
+  }
+}
+
 @media screen and (max-width: 376px) {
   .profile__form-group {
     .span-text {
@@ -223,8 +295,7 @@
   }
 }
 
-@media screen and (max-width:300px) {
-
+@media screen and (max-width: 300px) {
   .profile__label {
     font-size: 14px;
     padding-bottom: 10px;
@@ -250,7 +321,6 @@
     p {
       font-size: 14px;
     }
-
   }
 
   .profile__favorite {
