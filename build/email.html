@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Art Stock | Home</title>
@@ -10,37 +9,71 @@
     <link rel="stylesheet" href="./css/slick-theme.css" />
     <link rel="stylesheet" href="/css/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <script src="js/csi.min.js"></script>
-</head>
+  </head>
 
-<body>
-    <div class="edit__wrap">
-        <img src="/image/logo.svg" alt="logo" class="edit__logo img-fluid">
-
-        <div class="edit__form">
-                <form action="profile.html" class="edit__form-content">
-                    <p class="edit__subtitle">Edit Email</p>
-                    <div class="form-group">
-                        <label for="" class="edit__label">Current email</label>
-                        <input type="email" class="edit__input form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="edit__label">New email</label>
-                        <input type="password" class="edit__input form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="" class="edit__label">Confirm email</label>
-                        <input type="password" class="edit__input form-control">
-                    </div>
-                    <div class="edit__btn-div">
-                    <button type="submit" class="edit__btn edit__white">Cancel</button>
-                     <button type="submit" class="edit__btn">Change email</button>
-                    </div>
-
-                </form>
-            </div>
+  <body>
+    <header class="state__header">
+      <a class="navbar-brand" href="index.html">
+        <img src="/image/logo.svg" alt="logo" class="img-fluid" />
+      </a>
+    </header>
+ <div class="general__wrap email border">
+    <div class="account__container fixed-top side-bar">
+      <p class="account__title">Account settings</p>
+      <ul class="account__lists">
+        <li class="list-item">
+          <a href="editProfile.html">
+            <span class="list-title">Edit Profile</span>
+          </a>
+        </li>
+        <li class="list-item">
+          <a href="email.html" class="active">
+            <span class="list-title">Email settings</span>
+          </a>
+        </li>
+        <li class="list-item">
+          <a href="password.html">
+            <span class="list-title">Change password</span>
+          </a>
+        </li>
+        <li class="list-item">
+          <a href="payment.html">
+            <span class="list-title">Payment details</span>
+          </a>
+        </li>
+        <li class="list-item">
+          <a href="deactivate.html">
+            <span class="list-title">Deactivate account</span>
+          </a>
+        </li>
+      </ul>
     </div>
-</body>
-
+   
+      <div class="general__usergeneral">
+        <div class="general__flex-general ">
+          <a href="sidebar.html" class="arrow-back "
+            ><i class="fas fa-arrow-left"></i
+          ></a>
+          <p class="general__title">Email settings</p>
+        </div>
+        <form action="profileState.html">
+          <div class="form-group">
+            <label for="" class="profile__label">Current email</label>
+            <input type="email" class="profile__input form-control" />
+          </div>
+          <div class="form-group">
+            <label for="" class="profile__label">New email</label>
+            <input type="password" class="profile__input form-control" />
+          </div>
+          <button type="submit" class="general__btn">Save changes</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>

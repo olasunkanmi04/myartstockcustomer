@@ -1,11 +1,16 @@
 .general {
+  &__logo {
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+
   &__wrap {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-bottom: 50px;
-    max-width: 1440px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 
@@ -16,17 +21,33 @@
 
   &__usergeneral {
     flex: 1;
-    width: 1366px;
     padding-right: 50px;
     padding-left: 300px;
+  }
 
-    .arrow-back {
-      display: none;
+  &__flex-general {
+    margin-top: 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    img {
+      object-fit: cover;
+      max-width: 100%;
+      margin-right: 30px;
     }
 
-    .arrow-back .fa-arrow-left {
-      color: #142367;
-      font-size: 24px;
+    a {
+      color: #3048b5;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+     .arrow-back {
+      display: block;
+      padding-right: 20px;
+      font-size: 20px;
+       color: #142367;
     }
   }
 
@@ -42,6 +63,22 @@
     font-weight: 500;
     font-size: 18px;
   }
+
+  &__btn {
+    height: 50px;
+    width: 213px;
+    border-radius: 5px;
+    background: #3048b5;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff !important;
+    margin-top: 15px;
+  }
 }
 
 @media screen and(max-width:1038px) {
@@ -53,50 +90,39 @@
 
 @media screen and (max-width: 768px) {
   .general__wrap {
-    margin-top: 150px;
-  }
+    margin-top: 50px;
 
+      .side-bar{
+      display: none;
+    }
+  }
   .general__usergeneral {
     width: 100%;
     padding-right: 50px;
-    padding-left: 120px;
+    padding-left: 50px;
   }
 }
 
 @media screen and (max-width: 550px) {
   .general__wrap {
-    margin-top: 30px;
-
-    .account__container {
-      display: none;
-    }
+    margin-top: 20px;
+   
   }
 
   .general__usergeneral {
     padding: 0 20px;
   }
-
-  .general__flex-general {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
-    .arrow-back {
-      display: block;
-      padding-right: 20px;
-    }
-  }
 }
 
 @media screen and (max-width: 350px) {
   .general__wrap {
-    margin-top: 10px;
+    margin-top: 0px;
+
   }
 
   .general__usergeneral {
     padding: 0 10px;
   }
-
   .general__title {
     color: #142367;
     font-size: 20px;

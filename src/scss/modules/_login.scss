@@ -21,7 +21,7 @@
     width: 40%;
     max-width: 650px;
     height: 100vh;
-    background-image: url('../image/login.jpeg');
+    background-image: url('../../image/login.jpg');
 
     &-overlay {
       width: 100%;
@@ -109,6 +109,10 @@
       margin-left: auto;
       margin-right: auto;
       max-width: 500px;
+
+      .login-link {
+        color: #3048b5;
+      }
     }
 
     &-wrap {
@@ -119,6 +123,11 @@
       bottom: 0;
       margin: auto;
       height: fit-content;
+    }
+
+    &-remember{
+      display: flex;
+      justify-content: space-between;
     }
   }
 }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Art Stock | Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/csi.min.js"></script>
+  </head>
+
+  <body>
+    <header class="state__header">
+      <a class="navbar-brand" href="index.html">
+        <img src="/image/logo.svg" alt="logo" class="img-fluid" />
+      </a>
+    </header>
+    <div class="general__wrap deactivate ">
+      <div class="account__container fixed-top side-bar">
+        <p class="account__title">Account settings</p>
+        <ul class="account__lists">
+          <li class="list-item">
+            <a href="editProfile.html">
+              <span class="list-title">Edit Profile</span>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="email.html">
+              <span class="list-title">Email settings</span>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="password.html">
+              <span class="list-title">Change password</span>
+            </a>
+          </li>
+          <li class="list-item">
+            <a href="payment.html">
+              <span class="list-title">Payment details</span>
+            </a>
+          </li>
+          <li class="list-item ">
+            <a href="deactivate.html" class="active">
+              <span class="list-title">Deactivate account</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="general__usergeneral">
+        <div class="general__flex-general ">
+          <a href="sidebar.html" class="arrow-back "
+            ><i class="fas fa-arrow-left"></i
+          ></a>
+          <p class="general__title">Deactivate account</p>
+        </div>
+        
+        <small
+          ><span class="warning">Warning: </span> Deactivating your account deteletes all your
+          uploads, collections and stats</small
+        >
+        <form action="index.html">
+        <div class="form-group mt-5">
+          <label for="exampleInputText1" class="profile__label "
+            >Enter password</label
+          >
+          <input
+            type="text"
+            class="form-control profile__input"
+            id="exampleInputText1"
+          />
+        </div>
+        <button type="submit" class="general__btn">Deactivate account</button>
+        </form>
+        <div class="deactivate__colored-div">
+            <p class="deactivate-name">Deleting Contents</p>
+            <p class="deactivate-text">Deactivating your account removes all your content from MyArtStock. However, the MyArtStock license is irrevocable, so copies of contents that were downloaded before deactivation may still be used.</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

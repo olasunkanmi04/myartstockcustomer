@@ -1,6 +1,13 @@
-const sideBar = document.querySelector('.side-bar')
+  $(document).ready(function () {
+    $('button.content-toggle').click(function () {
+      $('.allcontents').show()
+      $('.allstats').hide()
+    })
 
-document.querySelector('.toggle').onclick = function () {
-  this.classList.toggle('active')
-  sideBar.classList.toggle('active')
-}
+    $('button.stats-toggle').on('click', function () {
+      $('.allcontents').hide()
+      $('.allstats').show()
+    })
+  })
+
+
