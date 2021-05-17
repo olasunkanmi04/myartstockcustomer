@@ -1,9 +1,0 @@
-# global context
-[build]
-  publish = "build"
-  command = "gulp build"
-
-  [[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
