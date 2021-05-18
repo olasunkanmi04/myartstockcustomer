@@ -50,10 +50,10 @@
         </p>
         <h4 class="content-interest">Interests</h4>
         <div class="state__tags">
-          <input class="btn btn-primary tag-btn" type="button" value="Photgraphy" disabled />
-          <input class="btn btn-primary tag-btn" type="button" value="Sound" disabled />
-          <input class="btn btn-primary tag-btn" type="button" value="Voiceovers" disabled />
-          <input class="btn btn-primary tag-btn" type="button" value="Footages" disabled />
+          <span class="btn btn-primary tag-btn" type="button">Photography</span>
+          <span class="btn btn-primary tag-btn" type="button">Sound</span>
+          <span class="btn btn-primary tag-btn" type="button">Voiceovers</span>
+          <span class="btn btn-primary tag-btn" type="button">Footages</span>
         </div>
       </div>
     </div>
@@ -116,8 +116,8 @@
               <a class="page-link" id="footages-tab" data-toggle="tab" href="#footages" role="tab"
                 aria-controls="footages" aria-selected="false">2</a>
             </li>
-            <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
+            <li class="page-item" role="presentation">
+              <a class="page-link" id="voiceovers-tab" data-toggle="tab" href="#voiceovers" aria-label="Next" role="tab" aria-controls="voiceover">
                 <span aria-hidden="true">&raquo;</span>
               </a>
             </li>
@@ -142,6 +142,10 @@
           <div class="tab-pane fade" id="footages" role="tabpanel" aria-labelledby="footages-tab">
             <div data-include="footages.html"></div>
             <div data-include="footageModal.html"></div>
+          </div>
+            <div class="tab-pane fade" id="voiceovers" role="tabpanel" aria-labelledby="voiceovers-tab">
+            <div data-include="voiceovers.html"></div>
+            <div data-include="voiceModal.html"></div>
           </div>
         </div>
       </div>

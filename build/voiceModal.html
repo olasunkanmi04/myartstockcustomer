@@ -1,0 +1,36 @@
+<!-- Modal -->
+<div class="modal fade" id="voiceoversPreview" data-backdrop="static" data-keyboard="false" tabindex="-1"
+  aria-labelledby="voiceoversPreview" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content modal__modal-wrap">
+      <h5 class="modal-title text-center" id="voiceoversPreview">Sounds preview</h5>
+      <button type="button" class="request__close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+        <div class="modal-img">
+          <audio controls controlsList="nodownload">
+            <source src="/sound/sample-sound.mp3" type="audio/ogg" />
+            <source src="/sound/sample-sound.ogg" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <div class="modal-owner">
+          <p>Contributor: <span>Jokanola Adeyinka</span></p>
+          <p>Tags:</p>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <a href="#" role="button" class="btn btn-outline-primary btn-lg btn-outlined" data-toggle="modal"
+          data-target="#voiceoversPreview">
+          Delete
+        </a>
+        <a href="details.html" role="button" class="btn btn-secondary btn-lg btn-filled">
+          Edit details
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

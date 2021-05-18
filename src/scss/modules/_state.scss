@@ -2,6 +2,13 @@
   &__header {
     padding: 30px 0 5px 50px;
   }
+
+  &__fixed-header{
+    position: fixed;
+    top: 20px;
+    padding: 20px 0 5px 20px;
+  }
+
   &__wrap {
     max-width: 100%;
 
@@ -82,17 +89,11 @@
 
     .tag-btn {
       background: #f7f7f7;
-      color: #a0a3b3;
+      color: #222222;
       border-color: #f7f7f7;
+      margin-right: 10px;
     }
 
-    .tags-link {
-      font-size: 12px;
-      font-weight: 400;
-      line-height: 14px;
-      color: #3048b5;
-      text-decoration: underline;
-    }
   }
 
   &__mid-content {
@@ -135,7 +136,26 @@
   }
 }
 
+@media screen and(max-width:768px){
+  .state__header {
+    padding: 30px 0 5px 30px;
+  }
+
+   .state__fixed-header {
+     padding: 20px 0 5px 50px;
+   }
+}
+
 @media screen and (max-width: 541px) {
+   .state__header {
+     padding: 30px 0 5px 20px;
+   }
+
+    .state__fixed-header {
+      padding: 20px 0 5px 20px;
+    }
+
+
   .state__wrap {
     max-width: 100%;
 

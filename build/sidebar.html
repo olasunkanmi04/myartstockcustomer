@@ -27,8 +27,11 @@
     <script src="js/csi.min.js"></script>
   </head>
   <body>
-    <div data-include="navbar.html"></div>
-    <div data-include="svg.html"></div>
+     <header class="state__header">
+      <a class="navbar-brand" href="index.html">
+        <img src="/image/logo.svg" alt="logo" class="img-fluid" />
+      </a>
+    </header>
 
     <div class="account__container">
       <p class="account__title">Account settings</p>
@@ -60,6 +63,12 @@
         <li class="list-item">
              <a href="deactivate.html">
                 <span class="list-title">Deactivate account</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </li>
+        <li class="list-item">
+             <a href="login.html">
+                <span class="list-title">Logout</span>
                 <i class="fas fa-chevron-right"></i>
             </a>
         </li>

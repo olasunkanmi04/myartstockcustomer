@@ -143,15 +143,7 @@
 }
 
 @media screen and (max-width: 550px) {
-  .login__wrap {
-    .hidden {
-      display: block;
-    }
 
-    .active {
-      display: none;
-    }
-  }
   .login__form-content {
     width: 100%;
   }

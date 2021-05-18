@@ -952,7 +952,7 @@ body {
     font-size: 14px;
     font-weight: 500; }
   .general__flex-general .arrow-back {
-    display: block;
+    display: none;
     padding-right: 20px;
     font-size: 20px;
     color: #142367; }
@@ -990,17 +990,19 @@ body {
 
 @media screen and (max-width: 768px) {
   .general__wrap {
-    margin-top: 50px; }
+    margin-top: 150px; }
     .general__wrap .side-bar {
       display: none; }
   .general__usergeneral {
     width: 100%;
     padding-right: 50px;
-    padding-left: 50px; } }
+    padding-left: 50px; }
+    .general__usergeneral .arrow-back {
+      display: block; } }
 
 @media screen and (max-width: 550px) {
   .general__wrap {
-    margin-top: 20px; }
+    margin-top: 120px; }
   .general__usergeneral {
     padding: 0 20px; } }
 
@@ -1132,10 +1134,6 @@ body {
     padding: 0 20px; } }
 
 @media screen and (max-width: 550px) {
-  .login__wrap .hidden {
-    display: block; }
-  .login__wrap .active {
-    display: none; }
   .login__form-content {
     width: 100%; }
   .login__logo {
@@ -1695,11 +1693,11 @@ body {
 @media screen and (max-width: 560px) {
   .account__container {
     padding: 0px 10px;
-    margin-top: 50px; }
+    margin-top: 30px; }
   .account__title {
     font-size: 30px; }
   .account__lists .list-item a {
-    padding: 30px 20px; }
+    padding: 20px 20px; }
     .account__lists .list-item a .fa-chevron-right {
       font-size: 22px; }
   .account__lists .list-item .fas {
@@ -1715,6 +1713,8 @@ body {
     font-size: 20px; }
   .account__lists .list-item {
     padding: 5px; }
+  .account__lists .list-item a {
+    padding: 20px 0px; }
   .account__lists .list-item a .fas {
     font-size: 14px; }
   .account__lists .list-item a .list-title {
@@ -1754,6 +1754,11 @@ body {
 
 .state__header {
   padding: 30px 0 5px 50px; }
+
+.state__fixed-header {
+  position: fixed;
+  top: 20px;
+  padding: 20px 0 5px 20px; }
 
 .state__wrap {
   max-width: 100%; }
@@ -1814,14 +1819,9 @@ body {
   margin-top: 10px; }
   .state__tags .tag-btn {
     background: #f7f7f7;
-    color: #a0a3b3;
-    border-color: #f7f7f7; }
-  .state__tags .tags-link {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 14px;
-    color: #3048b5;
-    text-decoration: underline; }
+    color: #222222;
+    border-color: #f7f7f7;
+    margin-right: 10px; }
 
 .state__mid-content {
   width: 100%;
@@ -1855,7 +1855,17 @@ body {
 .state__image img {
   margin-bottom: 10px; }
 
+@media screen and (max-width: 768px) {
+  .state__header {
+    padding: 30px 0 5px 30px; }
+  .state__fixed-header {
+    padding: 20px 0 5px 50px; } }
+
 @media screen and (max-width: 541px) {
+  .state__header {
+    padding: 30px 0 5px 20px; }
+  .state__fixed-header {
+    padding: 20px 0 5px 20px; }
   .state__wrap {
     max-width: 100%; }
     .state__wrap .btn-active {
@@ -1896,6 +1906,11 @@ body {
     align-items: center; }
     .content__pagination .flexed-nav .pagination {
       margin-right: 20px; }
+    .content__pagination .flexed-nav .page-link {
+      color: #303030 !important; }
+    .content__pagination .flexed-nav .active .page-link {
+      background-color: #A0A3B3 !important;
+      border-color: #A0A3B3 !important; }
   .content__pagination select {
     border-color: #e9eaef;
     height: 40px;
@@ -2055,6 +2070,8 @@ body {
     margin-top: 40px; } }
 
 @media screen and (max-width: 768px) {
+  .content__container {
+    padding: 0px 30px; }
   .content__stats {
     padding: 0 0px; }
     .content__stats .stats-sales {
@@ -2109,6 +2126,8 @@ body {
     line-height: 20px; } }
 
 @media screen and (max-width: 540px) {
+  .content__container {
+    padding: 0px 20px; }
   .content__img-wrap {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -2122,6 +2141,8 @@ body {
     margin-bottom: 50px; } }
 
 @media screen and (max-width: 376px) {
+  .content__container {
+    padding: 0px 20px; }
   .content__pagination .hide-pag-select {
     display: none; }
   .content__stats .stats-sales .sales-div {
@@ -2149,9 +2170,11 @@ body {
     border-color: #e3e7eb;
     padding: 0 10px; }
   .content__img-wrap {
-    display: block; }
+    display: block;
+    width: 100%; }
     .content__img-wrap img {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      width: 100%; }
   .content__img-sound {
     display: block; }
     .content__img-sound .sound-img-div {
@@ -2162,7 +2185,7 @@ body {
       flex-direction: column;
       padding-bottom: 20px; }
     .content__img-sound img {
-      width: 200px;
+      width: 100%;
       margin-bottom: 10px; }
     .content__img-sound p {
       padding-bottom: 20px;
