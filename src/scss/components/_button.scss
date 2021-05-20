@@ -1,14 +1,15 @@
 .alt__btn {
-    border: 1px solid #060505;
+    border: 1px solid #3048B5;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 5px;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
-    color: rgba(34, 34, 34, 0.8);
-    height: 60px;
+    font-size: 14px;
+    line-height: normal;
+    color: #3048B5;
+    height: 50px;
     background-color: transparent;
+    min-width: 160px;
 
     &:focus {
         outline: none;
@@ -16,15 +17,16 @@
 }
 
 .cta__btn {
-    background: #060505;
-    border-radius: 10px;
-    height: 60px;
+    background: #3048B5;
+    border-radius: 5px;
+    height: 50px;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: normal;
     color: #FFFFFF;
     border: none;
+    min-width: 160px;
 
     &:focus {
         outline: none;

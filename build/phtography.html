@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Art Stock | Home</title>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script src="js/csi.min.js"></script>
+</head>
+
+<body>
+    <div class="home__body cms__body">
+        <p class="home__title">Home page</p>
+        <div class="cms__breadcrumb">
+            <a href="/" class="cms__breadcrumb-previous">CMS</a>
+            <img src="/image/arrow-right.svg" alt="pointer" class="img-fluid">
+            <p class="cms__breadcrumb-current">Home page</p>
+        </div>
+
+        <div class="cms__section">
+            <p class="cms__section-title">Sliders</p>
+            <div class="mb-4">
+                <label for="slider" class="cms__label">Slider</label>
+                <select name="slider" id="slider" class="cms__select">
+                    <option value="slider1">Slider one</option>
+                    <option value="slider2">Slider two</option>
+                    <option value="slider3">Slider three</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="Image" class="cms__label">Image</label>
+                <div class="cms__section-img" style="background-image: url('/image/slider.png');">
+                    <div class="cms__section-img-overlay">
+                        <div class="cms__section-upload">
+                            <img src="/image/upload.svg" alt="upload" class="img-fluid">
+                            <input type="file">
+                        </div>
+                    </div>
+                </div>
+
+                <label for="Image" class="cms__label">Text</label>
+                <input type="text" value="A Resource  Hub for Black Representation" class="cms__input">
+                <input type="text" value="Get free content plus insights and the latest updates  to spread your message"
+                    class="cms__input">
+            </div>
+
+            <button class="alt__btn mr-2">Cancel</button>
+            <button class="cta__btn">Save changes</button>
+        </div>
+
+        <div class="cms__section">
+            <p class="cms__section-title">What we offer</p>
+            <div class="mb-4">
+                <label for="category" class="cms__label">Category</label>
+                <select name="category" id="category" class="cms__select">
+                    <option value="Photography">Photography</option>
+                    <option value="Footage">Footage</option>
+                    <option value="Painting">Painting</option>
+                    <option value="Voiceover">Voiceover</option>
+                </select>
+            </div>
+
+            <div class="cms__section-img" style="background-image: url('/image/category.jpg');">
+                <div class="cms__section-img-overlay">
+                    <div class="cms__section-upload">
+                        <img src="/image/upload.svg" alt="upload" class="img-fluid">
+                        <input type="file">
+                    </div>
+                </div>
+            </div>
+            <label for="Image" class="cms__label">Text</label>
+            <textarea class="cms__textarea">A Resource  Hub for Black Representation</textarea>
+
+            <button class="alt__btn mr-2">Cancel</button>
+            <button class="cta__btn">Save changes</button>
+        </div>
+
+        <div class="cms__section">
+            <p class="cms__section-title">Sign up</p>
+            <div class="cms__section-img" style="background-image: url('/image/category.jpg');">
+                <div class="cms__section-img-overlay">
+                    <div class="cms__section-upload">
+                        <img src="/image/upload.svg" alt="upload" class="img-fluid">
+                        <input type="file">
+                    </div>
+                </div>
+            </div>
+
+            <button class="alt__btn mr-2">Cancel</button>
+            <button class="cta__btn">Save changes</button>
+        </div>
+
+        <div class="cms__section">
+            <label for="Image" class="cms__label">Ad</label>
+            <textarea class="cms__textarea">
+Need Images all year long?
+Subscribe to one of our plans and get access to all of our content
+            </textarea>
+
+            <button class="alt__btn mr-2">Cancel</button>
+            <button class="cta__btn">Save changes</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
