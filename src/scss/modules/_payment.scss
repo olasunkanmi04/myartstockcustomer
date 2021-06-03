@@ -1,0 +1,83 @@
+.payment {
+  &__self-table-wrap {
+    width: 50% !important;
+  }
+
+  &__table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    padding: 10px 0px;
+    margin: 20px 0;
+
+    p {
+      font-size: 17px;
+      font-weight: 700;
+      line-height: 20px;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+    }
+    .table-hover {
+      white-space: nowrap;
+      width: 100%;
+    }
+
+    .table th {
+      border-top: hidden !important;
+      border-bottom: 1px solid #e3e8ec !important;
+    }
+
+    .table td {
+      border-top: 1px solid #e3e8ec !important;
+    }
+
+    .empty-th{
+      padding-right: 50px !important;
+   
+    }
+    .td-img{
+      position: relative;
+
+    }
+
+    img {
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      top:10px;
+    }
+    .table th,
+    .table td {
+      vertical-align: top;
+      padding: 20px 20px;
+      font-size: 16px;
+    }
+
+    td a {
+      color: #3048b5;
+    }
+
+    .table tbody tr:hover td,
+    .table tbody tr:hover th {
+      background-color: #fbfbfb !important;
+    }
+
+    .table-head {
+      text-align: left !important;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    .centered-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 778px) {
+  .payment__self-table-wrap {
+    width: 100% !important;
+  }
+}

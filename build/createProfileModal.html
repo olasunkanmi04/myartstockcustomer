@@ -1,0 +1,38 @@
+  <div class="general__left-btn">
+      <!-- Button trigger modal -->
+      <button type="button" class="general__btn" data-toggle="modal" data-target="#newProfile">
+          Create New Profile
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade " id="newProfile" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          aria-labelledby="newProfileLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content request__modal-wrap">
+                  <h5 class="modal-title text-center" id="newProfileLabel">Create new profile</h5>
+                  <button type="button" class="request__close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+                  <div class="modal-body ">
+                      <form>
+                          <div class="form-group">
+                              <label for="exampleInputName">Name of profile</label>
+                              <input type="text" class="form-control category-input" id="exampleInputName" aria-describedby="nameHelp">
+                          </div>
+                          <div class="form-group">
+                              <label for="exampleInputupload">Upload cover photo</label>
+                              <input type="text" class="form-control category-input" id="exampleInputupload">
+                          </div>
+                          <div class="form-group">
+                              <label for="exampleInputimage">Upload images <span>(optional)</span> </label>
+                              <input type="text" class="form-control category-input" id="exampleInputimage">
+                          </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer ">
+                      <button type="button" class="general__btn" data-toggle="modal" data-target="#newProfile">Create profile</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>

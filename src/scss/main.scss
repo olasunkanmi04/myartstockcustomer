@@ -19,12 +19,19 @@
 
 /*MODULES*/
 @import "modules/login.scss";
-@import "modules/profile.scss";
+@import "modules/editProfile.scss";
 @import "modules/plan-state.scss";
-@import "modules/edit.scss";
+@import "modules/email.scss";
 @import "modules/billing.scss";
-@import "modules/purchase.scss";
+@import "modules/payment.scss";
 @import "modules/recent.scss";
 @import "modules/receipt.scss";
 @import "modules/sidebar.scss";
-@import "modules/download.scss";
+@import "modules/deactivate.scss";
+@import "modules/state.scss";
+@import "modules/content.scss";
+@import "modules/request.scss";
+@import "modules/modal.scss";
+@import "modules/details.scss";
+@import "modules/upload.scss";
+@import "modules/contents.scss";

@@ -21,7 +21,7 @@
     width: 40%;
     max-width: 650px;
     height: 100vh;
-    background-image: url('../image/login.jpeg');
+    background-image: url('../../image/login.png');
 
     &-overlay {
       width: 100%;
@@ -97,18 +97,25 @@
     line-height: 25px;
     width: 100%;
     border: none;
-    color: #ffffff;
+    color: #fff !important;
     margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__form {
     position: relative;
 
     &-content {
-      width: 50%;
+      width: 100%;
       margin-left: auto;
       margin-right: auto;
       max-width: 500px;
+
+      .login-link {
+        color: #3048b5;
+      }
     }
 
     &-wrap {
@@ -120,6 +127,19 @@
       margin: auto;
       height: fit-content;
     }
+
+    &-remember{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (max-width: 1026px) {
+ 
+
+  .login__form-wrap {
+    margin-top: 300px; 
   }
 }
 
@@ -130,21 +150,24 @@
 
   .login__form-wrap {
     padding: 0 20px;
+    margin-top: 200px;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .login__wrap {
-    .hidden {
-      display: block;
-    }
 
-    .active {
-      display: none;
-    }
-  }
   .login__form-content {
     width: 100%;
+
+     .hidden {
+       display:
+         flex;
+     }
+
+     .active {
+       display:
+         none;
+     }
   }
 
   .login__logo {
@@ -152,4 +175,5 @@
     top: 30px;
     width: 120px;
   }
+ 
 }

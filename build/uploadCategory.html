@@ -1,0 +1,85 @@
+<div class="">
+  <!-- Button trigger modal -->
+  <button
+    type="button"
+    class="general__btn"
+    data-toggle="modal"
+    data-target="#newCategory"
+  >
+    Add New Category
+  </button>
+
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="newCategory"
+    data-backdrop="static"
+    data-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="newCategoryLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content request__modal-wrap">
+        <h5 class="modal-title text-center" id="newCategoryLabel">
+          Add New Category
+        </h5>
+        <button
+          type="button"
+          class="request__close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputName">Name of new category</label>
+
+              <input
+                type="text"
+                class="form-control category-input"
+                id="exampleInputName"
+                aria-describedby="nameHelp"
+              />
+            </div>
+            <div class="form-group">
+              <p class="absolute-span">.jpeg</p>
+              <label for="exampleInputupload">Upload cover photo</label>
+              <input
+                type="text"
+                class="form-control category-input"
+                id="exampleInputupload"
+              />
+            </div>
+            <div class="form-group file-input">
+              <img class="absolute-span" src="image/file-download.svg" alt="" />
+              <label for="exampleInputimage"
+                >Upload images <span>(optional)</span>
+              </label>
+              <div class="file-hidden-div">
+                <input
+                  type="file"
+                  class="form-control category-input"
+                  id="exampleInputimage"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="center-btn">
+            <button
+          type="button"
+          class="general__btn"
+          data-toggle="modal"
+          data-target="#newCategory"
+        >
+          Add New Category
+        </button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>

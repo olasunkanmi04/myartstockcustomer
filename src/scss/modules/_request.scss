@@ -1,0 +1,253 @@
+.request {
+  &__wrap {
+    padding: 70px 50px;
+  }
+
+
+  &__title {
+    h4 {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 32px;
+    }
+
+    small {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  }
+
+  &__content {
+    margin-top: 30px;
+    padding: 30px;
+
+    p {
+      margin-bottom: 20px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+  }
+
+  &__modal-wrap {
+    border-radius: 12px;
+    padding: 30px 20px;
+
+    audio{
+      width: 100%;
+    }
+    
+    .title-flex{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+
+      .fa-trash-alt{
+        color: #3048b5;
+      }
+
+      .modal-btn{
+        height: 50px;
+        width: 120px;
+      }
+
+     
+      h5{
+        margin-bottom: 0px !important;
+      }
+    }
+
+    .form-group{
+      position: relative;
+    }
+
+    .absolute-span{
+      color: #3048b5;
+      position: absolute;
+      top: 50%;
+      right: 40px;
+    }
+
+    .center-btn{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .file-input .file-hidden-div{
+      height: 65px;
+     width: 100%;
+      border-radius: 8px;
+      padding: 10px 0;
+      border: 0.4px solid #BDBDBD
+    }
+
+    .file-input input{
+      opacity: 0;
+    }
+    .modal-owner{
+      margin-top: 15px;
+    }
+     .modal-owner span {
+       color: #3048b5 !important;
+     }
+
+     .modal-owner p {
+       line-height: 30px !important;
+     }
+
+    h5 {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 28px;
+      color: #3048b5;
+      margin-bottom: 30px;
+    }
+
+    input {
+      padding: 20px;
+      width: 100%;
+      margin-bottom: 25px;
+      border-radius: 8px;
+      color: #3048b5;
+    }
+
+    label {
+      color: #3048b5;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+
+
+    }
+
+    .category-input{
+      padding: 30px 20px ;
+    }
+
+    .dotted-border{
+      border: 1px dashed #C1CCD9;
+      background: rgba(250, 251, 252, 0.6);
+      border-radius: 2px;
+      height: 140px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding:0 30px;
+      position: relative;
+
+      
+      p{
+        
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+       
+      }
+
+      span{
+        color: #3048b5;
+      }
+    }
+
+    .footage-modal-body {
+      margin: auto !important;
+    }
+    
+    .modal-footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+
+      button {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  &__modal-body {
+    height: 222px;
+    width: 318px;
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(9, 12, 25, 0.3);
+    border-radius: 8px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    color: #3048b5;
+    border: none;
+    background: transparent;
+  }
+
+  &__upload {
+    .hidden {
+      display: none;
+    }
+
+    p{
+      color: #3048b5;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+     
+
+    }
+    .upload-label {
+      border: 1px solid white;
+      height: 50px;
+      width: 166px;
+      display: block;
+      background: white;
+      box-shadow: 0px 4px 8px rgba(9, 12, 25, 0.3);
+      border-radius: 6px;
+      color: #3048b5;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px auto;
+    }
+  }
+
+  &__sales-modal {
+  
+    p{
+      text-transform: capitalize;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 0px;
+    }
+
+    span,
+    .uploaded-content {
+      color: #3048b5;
+    }
+
+    .uploaded-img{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .uploaded-img img{
+      margin: 10px 15px 10px 0;
+    max-width: 100%;
+    }
+  }
+}

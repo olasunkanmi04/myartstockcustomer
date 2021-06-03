@@ -1,13 +1,14 @@
 .general {
+  &__logo {
+    margin-bottom: 30px;
+    margin-left: 20px;
+  }
+
   &__wrap {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
+     margin-left: 250px;
+     min-height: 100vh;
+     background-color: #FBFBFB;
+      padding: 10px 0;
 
     .hidden {
       display: none;
@@ -15,26 +16,75 @@
   }
 
   &__usergeneral {
-    flex: 1;
-    width: 1366px;
-    padding-right: 50px;
-    padding-left: 300px;
+   padding: 20px 50px;
+  }
 
-    .arrow-back {
-      display: none;
+  &__flex-general {
+    margin-top: 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    img {
+      object-fit: cover;
+      max-width: 100%;
+      margin-right: 30px;
     }
 
-    .arrow-back .fa-arrow-left {
-      color: #142367;
-      font-size: 24px;
+    a {
+      color: #3048b5;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+     .arrow-back {
+      display: none;
+      padding-right: 20px;
+      font-size: 20px;
+       color: #3048b5;
     }
   }
 
+  &__dashboard-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    select{
+      padding: 20px;
+      border-width: 1px;
+      border-color: #E3E8EC;
+      background-color: #FBFBFB;
+      outline: #E3E8EC;
+    }
+  }
+
+  &__dashboard-stats{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin: 30px 0;
+
+    .dashboard-div{
+      background-color: #fff;
+      height: 100.00038px;
+      width: 250.00094px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-right: 30px;
+    }
+  }
+
+
   &__title {
-    color: #142367;
-    font-size: 28px;
-    font-weight: 700;
-    padding: 20px 0;
+    color: #3048B5;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0px 0;
   }
 
   &__subtitle {
@@ -42,61 +92,99 @@
     font-weight: 500;
     font-size: 18px;
   }
-}
 
-@media screen and(max-width:1038px) {
-  .general__usergeneral {
-    width: 100%;
-    padding-left: 300px;
+  &__left-btn{
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
   }
+
+  &__btn {
+    height: 50px;
+    width: 213px;
+    border-radius: 5px;
+    background: #3048b5;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff !important;
+    
+  }
+
+  &__white-btn{
+    background: #fff !important;
+    border: 1px solid #3048b5;
+    color: #3048b5 !important
+    ;
+  }
+
+  
 }
 
+
+@media screen and (max-width: 1026px) {
+ 
+  .general__usergeneral {
+    padding: 30px;
+  }
+
+  .general__dashboard-stats {
+    flex-wrap: wrap;
+    margin: 30px 0;
+
+     .dashboard-div {
+       margin-bottom: 30px;
+     }
+}
+}
 @media screen and (max-width: 768px) {
-  .general__wrap {
-    margin-top: 150px;
-  }
+   .general__wrap {
+     min-height: 100vh;
+     margin-left: 80px;
+     margin-right: auto;
 
-  .general__usergeneral {
-    width: 100%;
-    padding-right: 50px;
-    padding-left: 120px;
-  }
+    
+   }
+
+   .general__usergeneral{
+     padding: 30px;
+   }
+  
 }
 
 @media screen and (max-width: 550px) {
   .general__wrap {
-    margin-top: 30px;
-
-    .account__container {
-      display: none;
-    }
+        .side-bar {
+          display: none;
+        }
+   
   }
 
+  .general__wrap {
+    min-height: 100vh;
+    margin-left: 0px;
+    margin-right: auto;
+  
+     .arrow-back {
+       display: block;
+     }
+  }
+  
   .general__usergeneral {
-    padding: 0 20px;
+    padding: 20px;
   }
 
-  .general__flex-general {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-
-    .arrow-back {
-      display: block;
-      padding-right: 20px;
-    }
-  }
 }
 
 @media screen and (max-width: 350px) {
-  .general__wrap {
-    margin-top: 10px;
-  }
 
   .general__usergeneral {
     padding: 0 10px;
   }
-
   .general__title {
     color: #142367;
     font-size: 20px;

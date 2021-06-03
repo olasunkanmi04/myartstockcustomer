@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Art Stock | Home</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="/css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/slick.css" />
+  <link rel="stylesheet" href="./css/slick-theme.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="js/csi.min.js"></script>
+</head>
+
+<body>
+  <header class="state__header">
+    <a class="navbar-brand" href="index.html">
+      <img src="/image/logo.svg" alt="logo" class="img-fluid" />
+    </a>
+  </header>
+  <!-- wrapper starts here -->
+  <div class="state__wrap content">
+    <div class="btn-active left-btn">
+      <a href="uploadContent.html" class="general__btn ">
+        Upload new
+      </a>
+    </div>
+
+    <div class="state__flexed-container">
+      <div class="state__img-div">
+        <img src="image/profiledp.png" alt="" />
+      </div>
+      <div class="state__content">
+        <div class="content-flexed">
+          <h3>Adeyinka Jokanola</h3>
+          <form action="editProfile.html">
+            <button type="submit" class="btn btn-outline-primary edit-btn">
+              Edit profile
+            </button>
+          </form>
+        </div>
+        <p>
+          I’m a user experience designer curating better experiences and
+          designing digital products that help people live their best lives
+        </p>
+        <h4 class="content-interest">Interests</h4>
+        <div class="state__tags">
+          <span class="btn btn-primary tag-btn" type="button">Photography</span>
+          <span class="btn btn-primary tag-btn" type="button">Sound</span>
+          <span class="btn btn-primary tag-btn" type="button">Voiceovers</span>
+          <span class="btn btn-primary tag-btn" type="button">Footages</span>
+        </div>
+      </div>
+    </div>
+    <div class="btn-hidden ">
+      <a href="uploadContent.html" class="general__btn">
+        Upload new
+      </a>
+    </div>
+  </div>
+
+  <ul class="nav nav-pills mb-3 state__mid-content mb-5" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+        aria-controls="pills-home" aria-selected="true">Contents(42)</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+        aria-controls="pills-profile" aria-selected="false">Requests(2)</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab"
+        aria-controls="pills-contact" aria-selected="false">Stats</a>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+      <!-- put tab -->
+      <div class="content__pagination">
+        <nav aria-label="..." class="flexed-nav">
+          <ul class="pagination pagination-lg">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">
+                25
+                <span class="sr-only">(current)</span>
+              </span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">50</a></li>
+            <li class="page-item"><a class="page-link" href="#">100</a></li>
+          </ul>
+          <p class="pag-hidden">items per page</p>
+        </nav>
+
+        <select name="interest" id="interest" class="select hide-pag-select">
+          <option value="new">New to old</option>
+          <option value="old">Old to new</option>
+        </select>
+        <nav aria-label="Page navigation example" class="flexed-nav">
+          <p class="pr-5 pag-hidden">1 - 25 of 59</p>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="page-item" role="presentation">
+              <a class="page-link" id="content-tab" data-toggle="tab" href="#content" role="tab" aria-controls="content"
+                aria-selected="true"><span aria-hidden="true">&laquo;</span></a>
+            </li>
+            <li class="page-item" role="presentation">
+              <a class="page-link" id="sound-tab" data-toggle="tab" href="#sound" role="tab" aria-controls="sound"
+                aria-selected="false">1</a>
+            </li>
+            <li class="page-item" role="presentation">
+              <a class="page-link" id="footages-tab" data-toggle="tab" href="#footages" role="tab"
+                aria-controls="footages" aria-selected="false">2</a>
+            </li>
+            <li class="page-item" role="presentation">
+              <a class="page-link" id="voiceovers-tab" data-toggle="tab" href="#voiceovers" aria-label="Next" role="tab" aria-controls="voiceover">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="content__container">
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="content" role="tabpanel" aria-labelledby="content-tab">
+            <div class="state__image hidden">
+              <img src="./image/lf20_xEak8Q.json].png" alt="" />
+              <h3>No content available yet</h3>
+              <a href="uploadContent.html" class="general__btn" role="button" aria-pressed="true">Upload content</a>
+            </div>
+            <div data-include="content.html"></div>
+            <div data-include="pictureModal.html"></div>
+          </div>
+          <div class="tab-pane fade" id="sound" role="tabpanel" aria-labelledby="sound-tab">
+            <div data-include="sound.html"></div>
+            <div data-include="soundModal.html"></div>
+          </div>
+          <div class="tab-pane fade" id="footages" role="tabpanel" aria-labelledby="footages-tab">
+            <div data-include="footages.html"></div>
+            <div data-include="footageModal.html"></div>
+          </div>
+            <div class="tab-pane fade" id="voiceovers" role="tabpanel" aria-labelledby="voiceovers-tab">
+            <div data-include="voiceovers.html"></div>
+            <div data-include="voiceModal.html"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+      <div class="content__container">
+        <div class="state__image hidden">
+          <img src="./image/lf20_xEak8Q.json].png" alt="" />
+          <h3>No request available yet</h3>
+          <!-- <a href="uploadContent.html"  class="general__btn" role="button" aria-pressed="true">Upload content</a> -->
+        </div>
+        <div data-include="requests.html"></div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+      <div class="content__container">
+        <div class="state__image hidden">
+          <img src="./image/lf20_xEak8Q.json].png" alt="" />
+          <h3>No stats available yet</h3>
+        </div>
+        <div class="content__stats ">
+          <div class="stats-sales">
+            <div class="sales-div">
+              <small>No of sales</small>
+              <p>1000</p>
+            </div>
+            <div class="sales-div">
+              <small>Total sales</small>
+              <p>NGN 30K</p>
+            </div>
+          </div>
+          <div>
+            <select name="interest" id="interest" class="select">
+              <option value="new">Last 30 days</option>
+              <option value="old">Last 10 days</option>
+            </select>
+          </div>
+          <div class="content__graph border mt-5">
+            <canvas id="myChart" width="400" height="200"></canvas>
+          </div>
+          <div class="content__card-wrap">
+            <p>Top selling content</p>
+            <div class="card-group content__card">
+              <div class="card border-0 card-margined">
+                <img src="image/Rectangle 18244.png" class="card-img-top" alt="...">
+                <div class="card-body p-0">
+                  <h5 class="card-title">Title: <span>Blue car</span></h5>
+                  <h5 class="card-title">Date of upload: <span>12/31/2020</span></h5>
+                  <h5 class="card-title">No of downloads: <span>120</span></h5>
+                </div>
+              </div>
+              <div class="card border-0 card-margined">
+                <img src="image/Rectangle 18245.png" class="card-img-top" alt="...">
+                <div class="card-body p-0">
+                  <h5 class="card-title">Title: <span>Blue car</span></h5>
+                  <h5 class="card-title">Date of upload: <span>12/31/2020</span></h5>
+                  <h5 class="card-title">No of downloads: <span>120</span></h5>
+
+                </div>
+              </div>
+              <div class="card border-0">
+                <img src="image/Rectangle 18245.png" class="card-img-top" alt="...">
+                <div class="card-body p-0">
+                  <h5 class="card-title">Title: <span>Blue car</span></h5>
+                  <h5 class="card-title">Date of upload: <span>12/31/2020</span></h5>
+                  <h5 class="card-title">No of downloads: <span>120</span></h5>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.2.1/dist/chart.min.js"></script>
+  <script>
+    const labels = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+    ];
+    const data = {
+      labels: labels,
+      datasets: [{
+        label: 'My First dataset',
+        backgroundColor: '#DFECFF',
+        borderColor: '#BFCBFF',
+        data: [0, 10, 5, 2, 20, 30, 45],
+      }]
+    };
+    const config = {
+      type: 'line',
+      data,
+      options: {}
+    };
+    var myChart = new Chart(
+      document.getElementById('myChart'),
+      config
+    );
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Art Stock | Purchase</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/csi.min.js"></script>
+  </head>
+
+  <body>
+    <div data-include="navbar.html"></div>
+    
+    <div class="general__wrap payment">
+      <div class="account__container fixed-top side-bar">
+        <p class="account__title">Account settings</p>
+           <ul class="account__lists">
+        <li class="list-item ">
+            <a href="dashboard.html" >
+              <span class="list-icon"><img src="image/dash.svg" alt=""></span>  
+                <span class="list-title">Dashboard</span>
+            </a>
+        </li>
+        <li class="list-item ">
+            <a href="contents.html">   
+              <span class="list-icon"> <img src="image/pie-chart.svg" alt=""></span>  
+                <span class="list-title">Contents</span>
+            </a>
+        </li>
+        <li class="list-item">
+             <a href="users.html" class="active">
+               <span class="list-icon"><img src="image/users.svg" alt=""></span>
+                <span class="list-title">Users</span>
+            </a>
+        </li>
+        <li class="list-item">
+             <a href="sales.html" >
+               <span class="list-icon"><img src="image/sales.svg" alt=""></span>
+                <span class="list-title">Sales</span>
+            </a>
+        </li>
+        <li class="list-item">
+             <a href="profiles.html">
+               <span class="list-icon"><img src="image/Profile.svg" alt=""></span>
+               
+                <span class="list-title">Profiles</span>
+            </a>
+        </li>
+         <li class="list-item">
+             <a href="index.html">
+               <span class="list-icon"><i class="fas fa-sign-out-alt"></i></span>
+                <span class="list-title">Logout</span>
+            </a>
+        </li>
+    </ul>
+    <div class="toggle"></div>
+      </div>
+
+      <div class="general__usergeneral">
+         <div class="general__flex-general ">
+          <a href="sidebar.html" class="arrow-back "
+            ><i class="fas fa-arrow-left"></i
+          ></a>
+        <p class="general__title">Customers</p>
+        </div>
+        <div class="contents__sub-category">
+                <a href="users.html">Users</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="userContributor.html">Customers</a>
+               
+            </div>
+        
+        <div class="payment__table-wrap">
+          <table class="table table-hover ">
+            <thead>
+              <tr class="table-head text-center">
+                <th scope="col">date joined</th>
+                <th scope="col">username</th>
+                <th scope="col">contributions</th>
+                <th scope="col">subscription</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="">
+                <td>May 18, 2020</td>
+                <td><a href="/">Oluwatobi Babalola</a></td>
+                <td>10,023</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                <td>June 18, 2020</td>
+                <td><a href="/">Oluwatobi Babalola</a></td>
+                <td>100,938</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                 <td>June 18, 2020</td>
+                <td><a href="/">Oluwatobi Babalola</a></td>
+                <td>100,938</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                 <td>August 18, 2020</td>
+                <td><a href="/">Oluwatobi Babalola</a></td>
+                <td>100,938</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                 <td>August 18, 2020</td>
+                <td><a href="/">Oluwatobi Babalola</a></td>
+                <td>100,938</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                 <td>August 18, 2020</td>
+                <td><a href="/">Oluwatobi Babalola</a></td>
+                <td>100,938</td>
+                <td>N/A</td>
+              </tr>
+              <tr>
+                 <td>September 18, 2020</td>
+                <td><a href="/">Oluwatobi Babalola</a></td>
+                <td>100,938</td>
+                <td>N/A</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+       <div class="content__pagination">
+            <nav aria-label="..." class="flexed-nav">
+                <ul class="pagination pagination-lg">
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">
+                            25
+                            <span class="sr-only">(current)</span>
+                        </span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">50</a></li>
+                    <li class="page-item"><a class="page-link" href="#">100</a></li>
+                </ul>
+                <p class="pag-hidden">items per page</p>
+            </nav>
+
+            <select name="interest" id="interest" class="select hide-pag-select">
+                <option value="new">New to old</option>
+                <option value="old">Old to new</option>
+            </select>
+            <nav aria-label="Page navigation example" class="flexed-nav">
+                <p class="pr-5 pag-hidden">1 - 25 of 59</p>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="page-item" role="presentation">
+                        <a class="page-link" id="content-tab" data-toggle="tab" href="#content" role="tab"
+                            aria-controls="content" aria-selected="true"><span aria-hidden="true">&laquo;</span></a>
+                    </li>
+                    <li class="page-item" role="presentation">
+                        <a class="page-link" id="sound-tab" data-toggle="tab" href="#sound" role="tab"
+                            aria-controls="sound" aria-selected="false">1</a>
+                    </li>
+                    <li class="page-item" role="presentation">
+                        <a class="page-link" id="footages-tab" data-toggle="tab" href="#footages" role="tab"
+                            aria-controls="footages" aria-selected="false">2</a>
+                    </li>
+                    <li class="page-item" role="presentation">
+                        <a class="page-link" id="voiceovers-tab" data-toggle="tab" href="#voiceovers" aria-label="Next"
+                            role="tab" aria-controls="voiceover">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/tether.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

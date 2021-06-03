@@ -1,0 +1,59 @@
+.upload {
+  &__wrap {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    hr{
+        margin-bottom: 40px;
+    }
+    .checkbox-div {
+      display: flex;
+      flex-direction: row;
+     flex-wrap: wrap;
+      margin-bottom: 40px;
+
+      .checkbox-btn {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background: #eaeaea;
+        color: #3048b5;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       margin: 10px;
+      }
+
+      .checkbox-btn.active {
+        background: #3048b5;
+        color: #fff;
+      }
+    }
+  }
+
+  &__upload-flex {
+    display: flex;
+    align-items: center;
+
+    img{
+      max-width: 100%;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 500;
+      color: #3048B5;
+      margin-left: 20px;
+    }
+  }
+}
+
+@media screen and (max-width:768px){
+  .upload__upload-flex{
+   
+   label{
+     font-size: 12px;
+   }
+  }
+}

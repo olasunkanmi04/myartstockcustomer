@@ -27,55 +27,70 @@
     <script src="js/csi.min.js"></script>
   </head>
   <body>
-    <div data-include="navbar.html"></div>
-    <div data-include="svg.html"></div>
+    <header class="state__header">
+      <a class="navbar-brand" href="index.html">
+        <img src="/image/logo.svg" alt="logo" class="img-fluid" />
+      </a>
+    </header>
 
     <div class="account__container">
-      <p class="account__title">My Account</p>
+      <p class="account__title">Account settings</p>
       <ul class="account__lists">
-        <li class="list-item active">
-          <a href="profile.html" class=" list-item-link">
-            <span class="list-icon"><i class="far fa-user"></i></span>
-            <span class="list-title">Profile</span>
+        <li class="list-item">
+          <a href="dashboard.html">
+            <span class="list-item-link">
+            <span class="list-icon"><img src="image/dash.svg" alt=""></span>
+            <span class="list-title">Dashboard</span>
+            </span>
+            <i class="fas fa-chevron-right"></i>
           </a>
-          <a href="profile.html"><i class="fas fa-chevron-right"></i></a>
         </li>
         <li class="list-item">
-          <a href="billing.html" class="list-item-link">
-            <span class="list-icon"><i class="far fa-credit-card"></i></span>
-            <span class="list-title">Billing</span>
+          <a href="contents.html">
+            <span class="list-item-link">
+            <span class="list-icon"> <img src="image/pie-chart.svg" alt=""></span> 
+            <span class="list-title">Contents</span>
+            </span>
+            <i class="fas fa-chevron-right"></i>
           </a>
-           <a href="billing.html"><i class="fas fa-chevron-right"></i></a>
         </li>
         <li class="list-item">
-          <a href="plan-state.html" class="list-item-link">
-            <span class="list-icon"><i class="far fa-file-alt"></i></span>
-            <span class="list-title">Plans</span>    
+          <a href="users.html">
+            <span class="list-item-link">
+            <span class="list-icon"><img src="image/users.svg" alt=""></span>
+            <span class="list-title">Users</span>
+            </span>
+            <i class="fas fa-chevron-right"></i>
           </a>
-           <a href="plan-state.html"><i class="fas fa-chevron-right"></i></a>
         </li>
         <li class="list-item">
-          <a href="purchase.html" class="list-item-link">
-            <span class="list-icon"><i class="far fa-clock"></i></span>
-            <span class="list-title">Purchase history</span>
-           
+          <a href="sales.html">
+            <span class="list-item-link">
+            <span class="list-icon"><img src="image/sales.svg" alt=""></span>
+            <span class="list-title">Sales</span>
+            </span>
+            <i class="fas fa-chevron-right"></i>
           </a>
-           <a href="purchase.html"><i class="fas fa-chevron-right"></i></a>
-        </li>
-         <li class="list-item">
-          <a href="download.html" class="list-item-link">
-            <span class="list-icon"><i class="fas fa-download"></i></span>
-            <span class="list-title">Download history</span>
-           
-          </a>
-           <a href="purchase.html"><i class="fas fa-chevron-right"></i></a>
         </li>
         <li class="list-item">
-          <a href="recent.html" class="list-item-link">
-            <span class="list-icon"><i class="far fa-chart-bar"></i></span>
-            <span class="list-title">Recently viewed</span>
+          <a href="profiles.html">
+            <span class="list-item-link">
+              <span class="list-icon"><img src="image/Profile.svg" alt=""></span>
+              <span class="list-title">Profiles</span>
+            </span>
+
+            <i class="fas fa-chevron-right"></i>
           </a>
-           <a href=recent.html"><i class="fas fa-chevron-right"></i></a>
+        </li>
+        <li class="list-item">
+          <a href="index.html">
+            <span class="list-item-link">
+              <span class="list-icon"><i class="fas fa-sign-out-alt"></i></span>
+              <span class="list-title">Logout</span>
+            </span>
+
+            <i class="fas fa-chevron-right"></i>
+          </a>
         </li>
       </ul>
       <div class="toggle"></div>
